@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 10;
+    }
+
+    .logo {
+      color: #e50914;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1606813907291-d86efa9b94db') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      max-width: 500px;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      max-width: 400px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .btn-play {
+      background: white;
+      color: black;
+    }
+
+    .btn-info {
+      background: gray;
+      color: white;
+    }
+
+    /* ROWS */
+    .row {
+      margin: 30px 0;
+      padding: 0 50px;
+    }
+
+    .row h2 {
+      margin-bottom: 10px;
+    }
+
+    .row-posters {
+      display: flex;
+      overflow-x: scroll;
+      gap: 10px;
+    }
+
+    .row-posters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .poster {
+      max-height: 150px;
+      transition: transform 0.3s;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .poster:hover {
+      transform: scale(1.1);
+    }
+
+    .large {
+      max-height: 250px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">NETFLIX</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Stranger Things</h1>
+    <p>When a young boy disappears, his mother and friends must confront terrifying supernatural forces.</p>
+    <div class="buttons">
+      <button class="btn btn-play">▶ Play</button>
+      <button class="btn btn-info">ℹ More Info</button>
+    </div>
+  </div>
+
+  <!-- ROW 1 -->
+  <div class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters">
+      <img class="poster large" src="E:\download (5).jpeg">
+      <img class="poster large" src="E:\download (6).jpeg">
+      <img class="poster large" src="E:\download (7).jpeg">
+      <img class="poster large" src="E:\download (8).jpeg">
+    </div>
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="row">
+    <h2>Top Rated</h2>
+    <div class="row-posters">
+      <img class="poster" src="E:\download (10).jpeg">
+      <img class="poster" src="E:\download (11).jpeg">
+      <img class="poster" src="E:\download (12).jpeg">
+      <img class="poster" src="E:\download (13).jpeg">
+    </div>
+  </div>
+
+  <!-- ROW 3 -->
+  <div class="row">
+    <h2>Action Movies</h2>
+    <div class="row-posters">
+      <img class="poster" src="E:\download (3).jpeg">
+      <img class="poster" src="E:\download (2).jpeg">
+      <img class="poster" src="E:\download (1).jpeg">
+      <img class="poster" src="E:\download (4).jpeg">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    thalkarkaveri4@gmail.com | 8483057112 🚀
+  </footer>
+
+</body>
+</html>
