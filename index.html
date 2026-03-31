@@ -1,192 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Modern Landing Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: #f5f7fa;
-            color: #333;
-        }
-
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 50px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav h2 {
-            color: #3498db;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        nav ul li {
-            cursor: pointer;
-        }
-
-        nav ul li:hover {
-            color: #3498db;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 60px 50px;
-        }
-
-        .hero-text {
-            max-width: 500px;
-        }
-
-        .hero-text h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .hero-text p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        .hero-text button {
-            padding: 12px 20px;
-            border: none;
-            background: #3498db;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .hero-text button:hover {
-            background: #2980b9;
-        }
-
-        .hero img {
-            width: 1200px;
-        }
-
-        /* Features */
-        .features {
-            padding: 50px;
-            text-align: center;
-        }
-
-        .features h2 {
-            margin-bottom: 30px;
-        }
-
-        .feature-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* Footer */
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        /* Responsive */
-        @media(max-width: 300px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero img {
-                width: 500%;
-                margin-top: 800px;
-            }
-        }
-    </style>
+    <title>Modern Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <center><h1>BK EMPAIRES</h1></center>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+<div class="sidebar">
+    <h2>My Dashboard</h2>
+    <ul>
+        <li>🏠 Home</li>
+        <li>📊 Analytics</li>
+        <li>👤 Users</li>
+        <li>📦 Products</li>
+        <li>⚙ Settings</li>
+    </ul>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>BUILD YOUR DREAM EMPIRE 🚀
+<div class="main">
 
-DEFINE YOUR VISION
-</h1>
-            <p>Web Development</p>
+<header>
+<h1>Dashboard</h1>
+</header>
 
-<p>App Development</p>
+<div class="cards">
 
-<p>UI/UX Design</p>
+<div class="card">
+<h3>Total Users</h3>
+<p>1200</p>
+</div>
 
-<p>Digital Marketing</p>
+<div class="card">
+<h3>Orders</h3>
+<p>530</p>
+</div>
 
-<p>AI Tools</p>
-            <button>Get Started</button>
-        </div>
-        <img src="E:\download.jpeg" alt="hero image">
-    </section>
+<div class="card">
+<h3>Revenue</h3>
+<p>$12,000</p>
+</div>
 
-    <!-- Features -->
-    <section class="features">
-        <h2>Our Features</h2>
-        <div class="feature-box">
-            <div class="box">
-                <h3>Fast</h3>
-                <p>Optimized for speed and performance.</p>
-            </div>
-            <div class="box">
-                <h3>Responsive</h3>
-                <p>Works on all devices.</p>
-            </div>
-            <div class="box">
-                <h3>Modern Design</h3>
-                <p>Clean and professional UI.</p>
-            </div>
-        </div>
-    </section>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <p>thalkarkaveri4@gmail.com | 8483057112</p>
-    </footer>
+<div class="table-section">
+
+<h2>Recent Users</h2>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Kaveri</td>
+<td>kaveri@email.com</td>
+<td>Active</td>
+</tr>
+
+<tr>
+<td>Rahul</td>
+<td>rahul@email.com</td>
+<td>Active</td>
+</tr>
+
+<tr>
+<td>Sneha</td>
+<td>sneha@email.com</td>
+<td>Inactive</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
